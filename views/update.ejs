@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update your Hisaab</title>
+    <link rel="stylesheet" href="/css/update.css">
+
+
+</head>
+<body>
+    <nav>
+        <div class="logo-name"><a href="/">Khatabook</a></div>
+
+        <div class="right-nav">
+            <div class="home"><a href="/">Home</a></div>
+            <div class="cretae-hisaab"><a href="/create">Create New Hisaab</a></div>
+        </div>
+    </nav>
+
+    <div class="hisaab">You're editing hisaab of <span class="date"><%= dtte %></span> date</div>
+
+    <div class="writting-area">
+        <form class="wrtng" action="/update/<%= dtte%>" method="post">
+            <textarea class="writing-place" name="text" rows="31" cols="83" >
+                <%= fileContent %>
+            </textarea>
+            <input type="submit" class="wrtng-btn" value="Update Hisaab">
+        </form>
+    </div>
+
+</body>
+</html>

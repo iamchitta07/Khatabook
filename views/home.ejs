@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Khatabbook</title>
+    <link rel="stylesheet" href="/css/home.css">
+
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo-name"><a href="/">Khatabook</a></div>
+
+        <div class="right-nav">
+            <div class="home"><a href="/">Home</a></div>
+            <div class="cretae-hisaab"><a href="/create">Create New Hisaab</a></div>
+        </div>
+    </nav>
+
+    <div class="hisaab">All Hisaab Kitaab</div>
+    <div class="all-hisaab">
+        <% items.forEach(item => { %>
+            <div class="tag-bar" data-id="<%= item %>">
+                <div class="tag-date"><%= item %></div>
+                <a href="/view/<%= item %>" class="move">
+                    <i class="fa-solid fa-arrow-right fa-2x"></i>
+                </a>
+                <a href="/update/<%= item %>" class="pencil">
+                    <i class="fa-solid fa-pencil fa-2x"></i>
+                </a>
+                <a href="/delete/<%= item %>" class="delete">
+                    <i class="fa-solid fa-trash-can fa-2x"></i>
+                </a>
+            </div>
+          <% }) %>
+    </div>
+</body>
+</html>

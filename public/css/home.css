@@ -1,0 +1,80 @@
+html {
+    box-sizing: border-box;
+    padding: 4rem;
+    margin: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+nav {
+    display: flex;
+    gap: 80rem;
+}
+
+.logo-name a {
+    font-size: 4rem;
+    text-decoration: none;
+    color: black;
+}
+
+.right-nav {
+    display: flex;
+    gap: 8rem;
+    align-items: center;
+}
+
+.right-nav div a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+}
+
+.hisaab {
+    font-size: 3rem;
+    margin: 4rem 0;
+}
+
+.tag-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 4rem;
+    width: 30rem;
+    border-radius: 1rem;
+    background-color: #3284FF;
+    margin: 1rem 0;
+}
+
+.tag-date {
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.move, .pencil {
+    color: white;
+    text-decoration: none;
+}
+
+.move , .delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.move i {
+    color: #3284FF;
+}
+
+.pencile i {
+    color: #fff;
+}
+
+.delete i {
+    color: #f00;
+}

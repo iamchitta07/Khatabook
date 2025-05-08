@@ -1,0 +1,85 @@
+html {
+    box-sizing: border-box;
+    padding: 4rem;
+    margin: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+nav {
+    display: flex;
+    gap: 80rem;
+}
+
+.logo-name a {
+    font-size: 4rem;
+    text-decoration: none;
+    color: black;
+}
+
+.right-nav {
+    display: flex;
+    gap: 8rem;
+    align-items: center;
+}
+
+.right-nav div a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+}
+
+.hisaab {
+    font-size: 3rem;
+    margin: 4rem 0 2rem 0;
+}
+
+.edit {
+    text-decoration: none;
+    color: #3284FF;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.date {
+    color: #3284FF;
+    font-weight: 600;
+}
+
+.writing-place {
+    background-color: #eee;
+    font-size: 1.2rem;
+    height: 45rem;
+    width: 60rem;
+    margin: 4rem 0 0 0;
+    border-radius: 2rem;
+    padding: 2rem;
+    outline: none;
+    border: none;
+}
+
+.wrtng-btn {
+    font-size: 1.5rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 3rem;
+    width: 15rem;
+    border-radius: 1rem;
+    background-color: #3284FF;
+    margin: 1rem 0;
+}
+
+.wrtng-btn {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.wrtng-btn:focus, .wrtng-btn:active, .writing-place:focus, .writing-place:active {
+    outline: none;
+    box-shadow: none;
+}
